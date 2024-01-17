@@ -1,0 +1,15 @@
+C:\Programmering tas\hjemmePC-opg\obj\Debug\net6.0\hjemmePC-opg.csproj.AssemblyReference.cache
+C:\Programmering tas\hjemmePC-opg\obj\Debug\net6.0\hjemmePC-opg.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programmering tas\hjemmePC-opg\obj\Debug\net6.0\hjemmePC-opg.AssemblyInfoInputs.cache
+C:\Programmering tas\hjemmePC-opg\obj\Debug\net6.0\hjemmePC-opg.AssemblyInfo.cs
+C:\Programmering tas\hjemmePC-opg\obj\Debug\net6.0\hjemmePC-opg.csproj.CoreCompileInputs.cache
+C:\Programmering tas\hjemmePC-opg\bin\Debug\net6.0\hjemmePC-opg.exe
+C:\Programmering tas\hjemmePC-opg\bin\Debug\net6.0\hjemmePC-opg.deps.json
+C:\Programmering tas\hjemmePC-opg\bin\Debug\net6.0\hjemmePC-opg.runtimeconfig.json
+C:\Programmering tas\hjemmePC-opg\bin\Debug\net6.0\hjemmePC-opg.dll
+C:\Programmering tas\hjemmePC-opg\bin\Debug\net6.0\hjemmePC-opg.pdb
+C:\Programmering tas\hjemmePC-opg\obj\Debug\net6.0\hjemmePC-opg.dll
+C:\Programmering tas\hjemmePC-opg\obj\Debug\net6.0\refint\hjemmePC-opg.dll
+C:\Programmering tas\hjemmePC-opg\obj\Debug\net6.0\hjemmePC-opg.pdb
+C:\Programmering tas\hjemmePC-opg\obj\Debug\net6.0\hjemmePC-opg.genruntimeconfig.cache
+C:\Programmering tas\hjemmePC-opg\obj\Debug\net6.0\ref\hjemmePC-opg.dll
