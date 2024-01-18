@@ -82,7 +82,53 @@ for (int l = 0; l < Length; l++)
 {
     Console.Write(copies[l] + " ");
 }
-*/
 
 
+5. Write a C# Sharp program in to count duplicate elements in an array.
+Test Data :
+Input the number of elements to be stored in the array :3
+Input 3 elements in the array :
+element - 0 : 5
+element - 1 : 1
+element - 2 : 1
+Expected Output :
+Total number of duplicate elements found in the array is : 1
+Console.WriteLine("Please enter the amount of inputs you want the array to contain");
+
+int length = Convert.ToInt32(Console.ReadLine());
+int[] numbers = new int[length];
+int[] copy = new int[length];
+int[] dupes = new int[length];
+int dupeCount = 1;
+int dupeOutput = 0;
+
+Console.WriteLine("Please enter " + length + " inputs");
+for (int i = 0; i < numbers.Length; i++)
+{
+    numbers[i] = Convert.ToInt32(Console.ReadLine());
+    copy[i] = numbers[i];
+}
+
+for (int i = 0; i < length; i++){
+    for (int j = 0; j < length; j++){
+        if (numbers[i] == copy[j]){
+            dupes[j] = dupeCount;
+            dupeCount++;
+        }
+    }
+    dupeCount = 1;
+}
+for (int l = 0; l < length; l++){
+    if (dupes[l] == 2){
+        dupeOutput++;
+    }
+}
+Console.WriteLine("The array of numbers are");
+for (int k = 0; k < length; k++){
+Console.WriteLine(numbers[k]);
+}
+Console.WriteLine("The amount of dupes in the array is " + dupeOutput);
+
+Like, it works but if there are 3 or more of the same numbers, it will stil only see it as one duplicate...
+*/ 
 
