@@ -1,13 +1,14 @@
-﻿/* Opg 1 arrays
+﻿/*
+Opg 1 arrays
 int[] outputs = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 for (int i = 0; i < outputs.Length; i++){
     Console.WriteLine(outputs[i]);
 }
-*/
 
 
+---------------------------------------------------------------------------------
 
-/*
+
 3. Write a program in C# Sharp to find the sum of all array elements.
 Test Data :
 Input the number of elements to be stored in the array :3
@@ -36,10 +37,9 @@ for (int booty = 0; booty < numbers.Length;  booty++)
 sum += numbers[booty];
 }
 Console.WriteLine("The sum of the elements are " + sum);
-*/
 
+------------------------------------------------------------------------------------------
 
-/*
 4. Write a C# Sharp program to copy the elements of one array into another array.
 Test Data :
 Input the number of elements to be stored in the array :3
@@ -83,6 +83,7 @@ for (int l = 0; l < Length; l++)
     Console.Write(copies[l] + " ");
 }
 
+-------------------------------------------------------------------------------
 
 5. Write a C# Sharp program in to count duplicate elements in an array.
 Test Data :
@@ -130,5 +131,50 @@ Console.WriteLine(numbers[k]);
 Console.WriteLine("The amount of dupes in the array is " + dupeOutput);
 
 Like, it works but if there are 3 or more of the same numbers, it will stil only see it as one duplicate...
-*/ 
 
+-------------------------------------------------------------
+
+euler opg 1
+
+int thousand = 1000;
+int three = 3;
+int five = 5;
+int sum = 0;
+for (int i = 0; i < thousand; i++){
+    if (i % three == 0 || i % five == 0){
+        sum += i;
+    }
+}
+Console.WriteLine(sum);
+
+
+--------------------------------------
+
+
+euler opg 2
+
+int one = 1;
+int two = 2;
+int sum = 0;
+
+int[] fibo = new int[100];
+
+fibo[1] = one;
+fibo[2] = two;
+
+for (int i = 2; i < fibo.Length; i++)
+{
+    fibo[i] = fibo[i - 1] + fibo[i - 2];
+    if (fibo[i] % two == 0)
+    {
+        sum += fibo[i];
+    }
+
+    if (sum >= 4000000)
+    {
+        break;
+    }
+}
+
+Console.WriteLine(sum);
+*/
