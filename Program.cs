@@ -177,4 +177,55 @@ for (int i = 2; i < fibo.Length; i++)
 }
 
 Console.WriteLine(sum);
+
+---------------------------------------
+
+int palin;
+int largest = 0;
+for (int i = 100; i < 1000; i++)
+{
+    for (int j = 100; j < 1000; j++)
+    {
+        int maybe = i * j, reverse = 0;
+        while (maybe > 0)
+        {
+            int rem = maybe % 10;
+            reverse = (reverse * 10) + rem;
+            maybe = maybe / 10;
+        }
+        maybe = i * j;
+        if (reverse == maybe)
+        {
+            palin = maybe;
+            if (largest < palin)
+            {
+                largest = palin;
+            }
+        }
+    }
+}
+Console.WriteLine(largest);
+
+------------------------------------------------
+
+euler opg 5
+
+for (int i = 2; i < 1000000000; i++)
+{
+    bool found = true;
+    for (int j = 1; j <= 20; j++)
+    {
+        if (i % j != 0)
+        {
+            found = false;
+            break;
+        }
+    }
+    if (found)
+    {
+        Console.WriteLine(i);
+        return;
+    }
+}
 */
+
