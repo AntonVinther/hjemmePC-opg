@@ -227,7 +227,8 @@ for (int i = 2; i < 1000000000; i++)
         return;
     }
 }
-*/
+
+-----------------------------------------
 
 int squares = 0;
 int sumsqrd = 0;
@@ -240,3 +241,6 @@ for (int i = 1; i <= 100; i++)
 sumsqrd = sumsqrd * sumsqrd;
 int diff = sumsqrd - squares;
 Console.WriteLine(diff);
+
+*/
+
