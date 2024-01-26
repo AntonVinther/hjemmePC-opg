@@ -244,7 +244,6 @@ Console.WriteLine(diff);
 
 using System.Globalization;
 */
-
 using System;
 
 public class PrimeChecker
@@ -265,11 +264,21 @@ public class PrimeChecker
 
     public static void Main()
     {
+        int count = 0;
         for (int i = 2; i < 1e9; i++)
         {
-            int number = i;
-            Console.WriteLine($"{number} is {(IsPrime(number) ? "prime" : "not prime")}.");
+        if (IsPrime(i))
+        {
+            count++;
         }
+                if (count == 10001)
+        {
+            Console.WriteLine(i);
+            return;
+        }
+        }
+
+
     }
 }
 
