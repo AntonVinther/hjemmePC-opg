@@ -242,6 +242,8 @@ sumsqrd = sumsqrd * sumsqrd;
 int diff = sumsqrd - squares;
 Console.WriteLine(diff);
 
+-----------------------------------------------
+
 using System.Globalization;
 
 using System;
@@ -281,6 +283,9 @@ public class PrimeChecker
 
     }
 }
+
+------------------------------------------------
+
 */
 using System;
 
