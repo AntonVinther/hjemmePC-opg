@@ -464,8 +464,9 @@ for (int i = 0; i < stockprices.Length; i++)
 }
 Console.WriteLine("The largest profit possible is {0} if you buy on day {1}, and sell on day {2}", largestproduct, buy, sell);
 
+-----------------------------------------------------------
+
 Tes subsequence
-*/
 int[] numbers = { 5, 4, 1, 8, 7, 12, 13, 9, 12, 20 };
 int[] sequence = { };
 for (int i = 0; i < numbers.Length; i++)
@@ -479,3 +480,45 @@ for (int i = 0; i < sequence.Length; i++)
 {
     Console.WriteLine(sequence[i]);
 }
+
+-------------------------------------------
+
+gambler
+
+
+using System.Runtime.CompilerServices;
+
+Console.WriteLine("Welcome to the Roulette!");
+Console.WriteLine("You will start with 100$");
+Console.WriteLine("Goodluck!");
+int start = 100;
+int money = 0;
+
+string red = "red";
+string black = "black";
+string green = "green";
+
+Console.WriteLine("To start the game, press ENTER");
+if (Console.ReadKey().Key == ConsoleKey.Enter)
+{
+    Console.Clear();
+    money = start;
+    Console.WriteLine(money + "$");
+    Console.WriteLine("Please input the amount you wish to bet");
+    int bet = Convert.ToInt32(Console.ReadLine());
+    if (bet < money)
+    {
+        money -= bet;
+        Console.Clear();
+        Console.WriteLine("money: " + money + "$");
+        Console.WriteLine("bet: " + bet + "$");
+        Console.WriteLine("Do you wish to bet RED, BLACK or GREEN");
+    }
+    else
+    {
+        Console.WriteLine("Bet too big, try again");
+        return;
+    }
+}
+USE WHILE LOOP mvh Post
+*/
