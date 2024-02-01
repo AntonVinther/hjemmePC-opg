@@ -423,7 +423,8 @@ for (int i = 0; i < 1000; i++)
     sum = sum * 2;
 }
 Console.WriteLine(sum);
-*/
+----------------------------------------
+euler 2 opløftet af 1000
 ulong sum = 2;
 ulong realsum = 0;
 for (int i = 0; i < 1000; i++)
@@ -435,4 +436,46 @@ for (int i = 0; i < 1000; i++)
         ciffersum[j] = sum;
     }
     realsum += ciffersum[i];
+}
+
+---------------------------------------------
+
+Tes Stock Prices
+int buy = 0, sell = 0;
+int product = 0;
+int largestproduct = 0;
+int[] stockprices = { 7, 1, 5, 3, 6, 4 };
+for (int i = 0; i < stockprices.Length; i++)
+{
+    for (int j = 0; j < stockprices.Length; j++)
+    {
+        if (j > i)
+        {
+            product += stockprices[j] - stockprices[i];
+            if (product > largestproduct)
+            {
+                largestproduct = product;
+                buy = i + 1;
+                sell = j + 1;
+            }
+            product = 0;
+        }
+    }
+}
+Console.WriteLine("The largest profit possible is {0} if you buy on day {1}, and sell on day {2}", largestproduct, buy, sell);
+
+Tes subsequence
+*/
+int[] numbers = { 5, 4, 1, 8, 7, 12, 13, 9, 12, 20 };
+int[] sequence = { };
+for (int i = 0; i < numbers.Length; i++)
+{
+    if (numbers[i] > numbers[i - 1])
+    {
+        sequence[i] = numbers[i];
+    }
+}
+for (int i = 0; i < sequence.Length; i++)
+{
+    Console.WriteLine(sequence[i]);
 }
