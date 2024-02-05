@@ -521,4 +521,51 @@ if (Console.ReadKey().Key == ConsoleKey.Enter)
     }
 }
 USE WHILE LOOP mvh Post
+
+----------------------------
+
+euler 14
+
+using System.ComponentModel.DataAnnotations.Schema;
+
+long collatz;
+int chain = 0;
+int longestchain = 0;
+long largestnumber = 0;
+for (long i = 13; i < 1000000; i++)
+{
+    collatz = i;
+    while (collatz != 1)
+    {
+        if (collatz % 2 == 0)
+        {
+            collatz /= 2;
+            chain++;
+        }
+        else if (collatz % 2 != 0)
+        {
+            collatz *= 3;
+            collatz += 1;
+            chain++;
+        }
+    }
+    if (chain > longestchain)
+    {
+        longestchain = chain;
+        if (i > largestnumber)
+        {
+            largestnumber = i;
+        }
+    }
+    chain = 0;
+}
+Console.WriteLine("The number below 1 million, with the largest chain is {0} and the length of its chain is {1}", largestnumber, longestchain);
+
+-------------------------------
+
+euler 15
+
 */
+int routes = 0;
+string grid = @"12
+                34";
