@@ -565,7 +565,40 @@ Console.WriteLine("The number below 1 million, with the largest chain is {0} and
 
 euler 15
 
-*/
 int routes = 0;
 string grid = @"12
                 34";
+
+-------------------------------
+
+euler 19
+
+*/
+int sundaycount = 0;
+int monday = 1, tuesday = 2, wednesday = 3, thursday = 4, friday = 5, saturday = 6, sunday = 7;
+int yearcount = 1900;
+for (int i = 0; i < 100; i++)
+{
+    yearcount++;
+    if (yearcount % 4 == 0)
+    {
+        for (int j = 0; j < 366; j++)
+        {
+            for (int l = 0; l < 7; l++)
+            {
+                if ()
+            }
+        }
+    }
+    else if (yearcount % 4 != 0)
+    {
+        for (int k = 0; k < 365; k++)
+        {
+            for (int m = 0; m < 7; m++)
+            {
+
+            }
+        }
+    }
+}
+Console.WriteLine(sundaycount);
