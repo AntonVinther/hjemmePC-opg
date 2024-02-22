@@ -573,7 +573,6 @@ string grid = @"12
 
 euler 19
 
-*/
 int sundaycount = 0;
 int monday = 1, tuesday = 2, wednesday = 3, thursday = 4, friday = 5, saturday = 6, sunday = 7;
 int yearcount = 1900;
@@ -602,3 +601,24 @@ for (int i = 0; i < 100; i++)
     }
 }
 Console.WriteLine(sundaycount);
+
+euler 20
+*/
+Console.WriteLine("Input a number n!");
+int input = Convert.ToInt32(Console.ReadLine());
+int inputForLoop = input;
+double multiplication = input;
+for (int i = 1; i < inputForLoop; i++)
+{
+    input -= 1;
+    multiplication *= input;
+}
+Console.WriteLine(multiplication);
+int sum = 0;
+string multi = multiplication. ToString();
+char[] characters = multi.ToCharArray();
+for (int i = 0; i < characters.Length; i++)
+{
+    sum += characters[i];
+}
+Console.WriteLine(sum);
