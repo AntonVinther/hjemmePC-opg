@@ -627,19 +627,25 @@ euler 25 1000 digit fibonacci number
 */
 using System.Numerics;
 List<BigInteger> fibonacci = new List<BigInteger>();
-int indexcount = 0;
+
+int indexcount = 3;
+
 fibonacci.Add(1);
 fibonacci.Add(1);
 fibonacci.Add(2);
+
 for (int i = 3;; i++)
 {
     fibonacci.Add(fibonacci[i - 2] + fibonacci[i - 1]);
+
     string characters = fibonacci[i].ToString();
     char[] digits = characters.ToCharArray();
+
     indexcount += 1;
+
     if (digits.Length >= 1000)
     {
-        Console.WriteLine(indexcount + 3);
+        Console.WriteLine(indexcount);
         break; 
     }
 }
