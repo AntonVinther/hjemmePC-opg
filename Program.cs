@@ -603,11 +603,11 @@ for (int i = 0; i < 100; i++)
 Console.WriteLine(sundaycount);
 
 euler 20
-*/
+using System.Numerics;
 Console.WriteLine("Input a number n!");
 int input = Convert.ToInt32(Console.ReadLine());
 int inputForLoop = input;
-double multiplication = input;
+BigInteger multiplication = input;
 for (int i = 1; i < inputForLoop; i++)
 {
     input -= 1;
@@ -615,10 +615,31 @@ for (int i = 1; i < inputForLoop; i++)
 }
 Console.WriteLine(multiplication);
 int sum = 0;
-string multi = multiplication. ToString();
+string multi = multiplication.ToString();
 char[] characters = multi.ToCharArray();
 for (int i = 0; i < characters.Length; i++)
 {
-    sum += characters[i];
+    sum += Convert.ToInt32(characters[i]);
 }
 Console.WriteLine(sum);
+
+euler 25 1000 digit fibonacci number
+*/
+using System.Numerics;
+List<BigInteger> fibonacci = new List<BigInteger>();
+int indexcount = 0;
+fibonacci.Add(1);
+fibonacci.Add(1);
+fibonacci.Add(2);
+for (int i = 3;; i++)
+{
+    fibonacci.Add(fibonacci[i - 2] + fibonacci[i - 1]);
+    string characters = fibonacci[i].ToString();
+    char[] digits = characters.ToCharArray();
+    indexcount += 1;
+    if (digits.Length >= 1000)
+    {
+        Console.WriteLine(indexcount + 3);
+        break; 
+    }
+}
