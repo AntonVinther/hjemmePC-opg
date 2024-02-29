@@ -624,7 +624,6 @@ for (int i = 0; i < characters.Length; i++)
 Console.WriteLine(sum);
 
 euler 25 1000 digit fibonacci number
-*/
 using System.Numerics;
 List<BigInteger> fibonacci = new List<BigInteger>();
 
@@ -648,4 +647,46 @@ for (int i = 3;; i++)
         Console.WriteLine(indexcount);
         break; 
     }
+}
+2. Write a program in C# Sharp to create a user defined function with parameters.
+Test Data :
+Please input a name : John
+Expected Output :
+Welcome friend John !
+Have a nice day!
+public class program
+{
+    public static void Main()
+    {
+        Getname("What is your name?");
+        PrintName(Console.ReadLine());
+    }
+    public static void Getname(string whatisname)
+    {
+        Console.WriteLine($"{whatisname}");
+    }
+    public static void PrintName(string NAME)
+    {
+        Console.WriteLine($"Well hi there {NAME}, nice to meet you!");
+    }
+}
+
+
+Add 2 numbers user defined numbers together using functions
+*/ 
+public class Program {
+public static void Main(){
+whatNumbs("what numbers should be added together?");
+PrintPlus(int.Parse(Console.ReadLine()),int.Parse(Console.ReadLine()));
+}
+public static void whatNumbs(string numbersss)
+{
+    Console.WriteLine($"{numbersss}");
+}
+public static void PrintPlus(int x, int y){
+Console.WriteLine($"{x} + {y} = {Plus(x, y)}");
+}
+public static int Plus(int x, int y){
+return x + y;
+}
 }
