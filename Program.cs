@@ -136,15 +136,14 @@ Like, it works but if there are 3 or more of the same numbers, it will stil only
 
 euler opg 1
 
-int thousand = 1000;
-int three = 3;
-int five = 5;
-int sum = 0;
+int thousand = 1000, five = 5, three = 3, sum = 0;
+
 for (int i = 0; i < thousand; i++){
     if (i % three == 0 || i % five == 0){
         sum += i;
     }
 }
+
 Console.WriteLine(sum);
 
 
@@ -525,7 +524,7 @@ USE WHILE LOOP mvh Post
 ----------------------------
 
 euler 14
-
+*/
 using System.ComponentModel.DataAnnotations.Schema;
 
 long collatz;
@@ -560,16 +559,9 @@ for (long i = 13; i < 1000000; i++)
     chain = 0;
 }
 Console.WriteLine("The number below 1 million, with the largest chain is {0} and the length of its chain is {1}", largestnumber, longestchain);
-
+/*
 -------------------------------
 
-euler 15
-
-int routes = 0;
-string grid = @"12
-                34";
-
--------------------------------
 
 euler 19
 
@@ -673,7 +665,6 @@ public class program
 
 
 Add 2 numbers user defined numbers together using functions
-*/ 
 public class Program {
 public static void Main(){
 whatNumbs("what numbers should be added together?");
@@ -690,3 +681,5 @@ public static int Plus(int x, int y){
 return x + y;
 }
 }
+
+*/
