@@ -663,7 +663,6 @@ public class program
 }
 
 Add 2 numbers user defined numbers together using functions
-*/
 public class Program {
 public static void Main(){
 whatNumbs("what numbers should be added together?");
@@ -680,4 +679,13 @@ public static int Plus(int x, int y){
 return x + y;
 }
 }
+*/
+int factorial(int n){
+    if (n == 0)
+    return 1;
+    else
+    return n*factorial(n-1);
+}
+Console.WriteLine("factorial is " + factorial(int.Parse(Console.ReadLine())));
+
 
