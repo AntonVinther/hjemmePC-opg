@@ -524,7 +524,7 @@ USE WHILE LOOP mvh Post
 ----------------------------
 
 euler 14
-*/
+
 using System.ComponentModel.DataAnnotations.Schema;
 
 long collatz;
@@ -559,7 +559,6 @@ for (long i = 13; i < 1000000; i++)
     chain = 0;
 }
 Console.WriteLine("The number below 1 million, with the largest chain is {0} and the length of its chain is {1}", largestnumber, longestchain);
-/*
 -------------------------------
 
 
@@ -663,8 +662,8 @@ public class program
     }
 }
 
-
 Add 2 numbers user defined numbers together using functions
+*/
 public class Program {
 public static void Main(){
 whatNumbs("what numbers should be added together?");
@@ -682,4 +681,3 @@ return x + y;
 }
 }
 
-*/
