@@ -679,7 +679,6 @@ public static int Plus(int x, int y){
 return x + y;
 }
 }
-*/
 int factorial(int n){
     if (n == 0)
     return 1;
@@ -687,5 +686,41 @@ int factorial(int n){
     return n*factorial(n-1);
 }
 Console.WriteLine("factorial is " + factorial(int.Parse(Console.ReadLine())));
+*/
 
 
+Console.WriteLine("Input the word to guess: ");
+string word = Console.ReadLine();
+
+char[] letters = new char[word.Length];  
+
+for (int i = 0; i < word.Length; i++){  
+    letters[i] = word[i];  
+    } 
+
+Console.Clear();
+
+foreach(char letter in letters){
+    Console.Write("_ ");
+}
+
+Console.WriteLine("\nTry to guess the word!");
+
+char[] solution = new char[word.Length];
+
+for(int j = 0; j < letters.Length; j++){
+    char guess = char.Parse(Console.ReadLine());
+    if (guess == letters[j]){
+        Console.WriteLine("You got it!");
+        solution[j] = guess;
+    }
+    else{
+        Console.WriteLine("Nuh uh");
+        j --;
+    }
+}
+
+Console.WriteLine("YES! The word was" + word);
+for(int k = 0; k < solution.Length; k++){
+    Console.Write(solution[k]);
+}
