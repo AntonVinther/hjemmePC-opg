@@ -686,7 +686,6 @@ int factorial(int n){
     return n*factorial(n-1);
 }
 Console.WriteLine("factorial is " + factorial(int.Parse(Console.ReadLine())));
-*/
 
 
 Console.WriteLine("Input the word to guess: ");
@@ -724,3 +723,45 @@ Console.WriteLine("YES! The word was" + word);
 for(int k = 0; k < solution.Length; k++){
     Console.Write(solution[k]);
 }
+
+
+Roulette
+*/
+int money = 100;
+while (money > 0){                                       //while loop to keep playing
+Console.Clear();                                         //clears the console
+Random random = new Random();
+int number = random.Next(0, 36);                         //generate a number form 0 to 36
+
+
+Console.WriteLine("You have " + money + " $");           //money counter
+
+Console.WriteLine("Please enter your bet amount");       //get the players bet amount
+
+int betsize = Convert.ToInt32(Console.ReadLine());       //save bet as int
+if (betsize > money){                                    //do they have enough money
+    Console.WriteLine("Insuffecient funds");             //they dont hav enough money
+
+}
+else{money -= betsize;}                                  //reduce money
+
+Console.WriteLine("What do you wish to bet on");
+Console.WriteLine("Input a number from 1 to 36");        //what are they betting on
+
+int betnumb = Convert.ToInt32(Console.ReadLine());       //convert the bet to an int
+if (betnumb == number){                                  //did they bet on the right number
+    betsize *= 36;                                       //36x the bet
+    Console.WriteLine("The number was " + number);       //what was the correct number
+    Console.WriteLine("YOU WON " + betsize + " $");      //winnings
+    money += betsize;                                    //update money
+    Console.WriteLine("You have " + money + " $");       //how much money do they have now
+}
+else{Console.WriteLine("YOU LOST " + betsize + " $");    //what did they lose
+Console.WriteLine("The number was " + number);           //what was the correct number
+Console.ReadKey();
+}
+}
+
+
+
+
